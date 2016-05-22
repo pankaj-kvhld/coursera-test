@@ -1,0 +1,89 @@
+
+/*To set the borders in the % of the width we set box-sizing to border-box*/
+
+* {
+	box-sizing: border-box;
+	font-family: "Comic Sans MS","Times New Roman", Georgia, Serif;
+}
+
+h1 {
+	text-align: center;
+	font-size: 175%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h2{
+	display: inline-block;
+	padding: 5px;
+	text-align: center;
+	width: 150px;
+	margin-top: -13px;
+	position: absolute;
+	right: -1px;
+    top: 12px;
+}
+
+
+div {
+	position: relative;
+	float: left;
+}
+
+.section {
+  background-color: #c7c7c7;    
+  border: 3px solid black;    
+  position: relative;        
+  margin-right: 15px;    
+  margin-left: 15px;    
+  margin-bottom: 15px;    
+  padding: 10px;    
+  padding-top: 35px;
+}
+
+#sec_title1 {
+	border: 1px solid black;
+	color: black;
+	background-color: #FFA07A;
+	font-size: 125%;
+}
+
+#sec_title2 {
+	border: 1px solid black;
+	color: white;
+	background-color: #4B0082;
+	font-size: 125%;
+}
+
+#sec_title3 {
+	border: 1px solid black;
+	color: black;
+	background-color: #FF00FF;
+	font-size: 125%;
+}
+
+
+@media (min-width: 992px){
+	.col-lg-4{
+		width: 33%;
+		position: relative;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	.col-md-6, .col-md-12{
+		position: relative;
+	}
+	.col-md-6{
+		width: 50%;
+	}
+	.col-md-12{
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px){
+	.col-sm-12{
+		width: 100%;
+	}
+}
